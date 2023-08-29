@@ -40,6 +40,7 @@
       "senderName": "Kimberly Smith",
       "profilePic": "./assets/images/avatar-kimberly-smith.webp",
       "action": " commented on your picture",
+      "userPicture": "./assets/images/image-chess.webp",
       "time": "1 week ago",
       "isUnread": false
     },

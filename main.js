@@ -11,12 +11,12 @@ const markAllReadBtn = document.querySelector("button#mark-all-read");
 //  variables
 let notifications = [];
 
-const BASE_URL = `https://nath-nipan-2022.github.io/Fem-challenge-notifications-page//data/db.json`;
+const BASE_URL = `http://localhost:3005/notifications`;
 
 const fetchData = async (url) => {
   try {
     const res = await axios.get(url);
-    return res.data.notifications;
+    return res.data;
   } catch (error) {
     console.error(error);
   }
@@ -39,37 +39,45 @@ function renderNotifications(notifications) {
             }"
           >
             <div class='flex gap-3 items-start'>
-              <div class="w-10 h-10">
+              <a href='#' class="w-10 h-10">
                 <img
                   src=${item.profilePic}
                   alt="profile picture"
+                  width='44px' height='44px'
                 />
-              </div>
+              </a>
               <div class="flex-1 text-Dark-grayish-blue text-sm font-medium">
-                <h4>
-                  <a
-                    href="#"
+                <h2>
+                  <a href="#" 
                     class="text-Very-dark-blue font-extrabold hover:text-primary-blue mr-1 cursor-pointer"
                   >
-                    ${item.senderName}
-                  </a>
+                    ${item.senderName}</a>
                     ${item.action}
-                  <a
-                    href="#"
-                    class="pl-1 font-extrabold hover:text-primary-blue cursor-pointer ${
-                      item.groupName ? "text-primary-blue" : ""
-                    }"
-                  >
-                    ${item.post || item.groupName || ""}
-                  </a>
+                  ${
+                    item.post || item.groupName
+                      ? `<a href="#" class="pl-1 font-extrabold hover:text-primary-blue cursor-pointer ${
+                          item.groupName ? "text-primary-blue" : ""
+                        }">${item.post || item.groupName}</a >`
+                      : ""
+                  }
                   <span
                     class="ml-1 w-2 h-2 rounded-full bg-primary-red ${
                       item.isUnread ? "inline-block" : "hidden"
                     }"
                   ></span>
-                </h4>
-                <h5>${item.time}</h5>
+                </h2>
+                <h3>${item.time}</h3>
               </div>
+              ${
+                item.userPicture
+                  ? `<a href='#'
+                    class='w-10 h-10 rounded-md cursor-pointer hover:outline outline-Light-grayish-blue-2 outline-offset-2'>
+                    <img src=${item.userPicture}
+                    alt='user picture' width='44px' height='44px'
+                    />
+                    </a>`
+                  : ""
+              }
             </div>
                ${
                  item.text

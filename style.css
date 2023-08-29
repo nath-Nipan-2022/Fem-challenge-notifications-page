@@ -703,6 +703,10 @@ video {
   margin-left: 0.25rem;
 }
 
+.ml-12 {
+  margin-left: 3rem;
+}
+
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -713,10 +717,6 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.ml-12 {
-  margin-left: 3rem;
 }
 
 .box-border {
@@ -1674,12 +1674,12 @@ video {
   border-radius: 9999px;
 }
 
-.rounded-md {
-  border-radius: 0.375rem;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .rounded-b {
@@ -1960,40 +1960,19 @@ video {
   padding-right: 0.625rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
-.pl-10 {
-  padding-left: 2.5rem;
-}
-
-.pl-12 {
-  padding-left: 3rem;
-}
-
-.pl-16 {
-  padding-left: 4rem;
-}
-
-.pl-14 {
-  padding-left: 3.5rem;
 }
 
 .pl-1 {
@@ -2149,6 +2128,10 @@ video {
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
+.text-Dark-grayish-blue {
+  color: hsl(var(--Dark-grayish-blue));
+}
+
 .text-Grayish-blue {
   color: hsl(var(--Grayish-blue));
 }
@@ -2173,10 +2156,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-Dark-grayish-blue {
-  color: hsl(var(--Dark-grayish-blue));
 }
 
 .underline {
@@ -2390,6 +2369,22 @@ video {
   outline-style: double;
 }
 
+.outline-1 {
+  outline-width: 1px;
+}
+
+.outline-offset-2 {
+  outline-offset: 2px;
+}
+
+.outline-Grayish-blue {
+  outline-color: hsl(var(--Grayish-blue));
+}
+
+.outline-Light-grayish-blue-2 {
+  outline-color: hsl(var(--Light-grayish-blue-2));
+}
+
 .ring {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
@@ -2544,16 +2539,16 @@ video {
   font-weight: 700;
 }
 
+.hover\:text-Dark-grayish-blue:hover {
+  color: hsl(var(--Dark-grayish-blue));
+}
+
 .hover\:text-primary-blue:hover {
   color: hsl(var(--primary-blue));
 }
 
-.hover\:text-Grayish-blue:hover {
-  color: hsl(var(--Grayish-blue));
-}
-
-.hover\:text-Dark-grayish-blue:hover {
-  color: hsl(var(--Dark-grayish-blue));
+.hover\:outline:hover {
+  outline-style: solid;
 }
 
 .before\:hover\:text-center:hover::before {
@@ -2575,28 +2570,12 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:mt-4 {
-    margin-top: 1rem;
-  }
-
   .sm\:grid {
     display: grid;
   }
 
-  .sm\:w-\[600px\] {
-    width: 600px;
-  }
-
-  .sm\:w-\[625px\] {
-    width: 625px;
-  }
-
   .sm\:w-\[610px\] {
     width: 610px;
-  }
-
-  .sm\:rounded-lg {
-    border-radius: 0.5rem;
   }
 
   .sm\:rounded-xl {
