@@ -6,7 +6,6 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -14,9 +13,7 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-## Overview
 
 ### The challenge
 
@@ -27,14 +24,10 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
-
-![](./screenshot.jpg)
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/built-notification-page-using-tailwindcss-axios-and-jsonserver-q5B_5qnAt0)
+- Live Site URL: [live hosted site](https://nath-nipan-2022.github.io/Fem-challenge-notifications-page/)
 
 ## My process
 
@@ -45,9 +38,8 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Tailwindcss
+- Axios
 
 ### What I learned
 
@@ -67,17 +59,11 @@ const proudOfThisFunc = () => {
 };
 ```
 
-### Continued development
-
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+-axios library: [Axios Api site](https://axios-http.com/docs/api_intro)
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-## Acknowledgments
+- Frontend Mentor - [@nath-Nipan-2022](https://www.frontendmentor.io/profile/nath-Nipan-2022)
+- Twitter - [@Aayouknow](https://www.twitter.com/Aayouknow)
