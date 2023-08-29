@@ -11,7 +11,7 @@ const markAllReadBtn = document.querySelector("button#mark-all-read");
 //  variables
 let notifications = [];
 
-const BASE_URL = `https://${location.host}/data/db.json`;
+const BASE_URL = `${location.href}/data/db.json`;
 
 const fetchData = async (url) => {
   try {
