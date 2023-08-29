@@ -11,12 +11,12 @@ const markAllReadBtn = document.querySelector("button#mark-all-read");
 //  variables
 let notifications = [];
 
-const BASE_URL = `http://localhost:3005/notifications`;
+const BASE_URL = `https://nath-nipan-2022.github.io/Fem-challenge-notifications-page//data/db.json`;
 
 const fetchData = async (url) => {
   try {
     const res = await axios.get(url);
-    return res.data;
+    return res.data.notifications;
   } catch (error) {
     console.error(error);
   }
