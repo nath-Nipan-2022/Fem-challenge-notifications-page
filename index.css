@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    :root {
+        --primary-red: 1, 90%, 64%;
+        --primary-blue: 219, 85%, 26%;
+
+        --Very-light-grayish-blue: 210, 60%, 98%;
+        --Light-grayish-blue-1: 211, 68%, 94%;
+        --Light-grayish-blue-2: 205, 33%, 90%;
+        --Grayish-blue: 219, 14%, 63%;
+        --Dark-grayish-blue: 219, 12%, 42%;
+        --Very-dark-blue: 224, 21%, 14%;
+    }
+}

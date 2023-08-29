@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Notifications page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="sm:grid place-items-center h-screen font-plus-jakarta-sans antialiased sm:bg-Light-grayish-blue-1"
+  >
+    <div
+      class="bg-white container p-6 w-[375px] mx-auto sm:w-[610px] sm:rounded-xl sm:mt-4"
+    >
+      <header class="py-2 flex items-center justify-between">
+        <div class="flex gap-2 items-center">
+          <h1 class="font-semibold">Notifications</h1>
+          <span
+            id="unread-count"
+            class="font-semibold px-2.5 rounded-md text-white bg-primary-blue"
+          >
+          </span>
+        </div>
+        <button
+          class="font-medium text-Grayish-blue text-sm hover:text-primary-blue"
+          id="mark-all-read"
+        >
+          Mark all as read
+        </button>
+      </header>
+
+      <main class="mt-4">
+        <ul id="notifications-container"></ul>
+      </main>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
